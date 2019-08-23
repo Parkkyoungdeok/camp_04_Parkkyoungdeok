@@ -1,0 +1,77 @@
+
+.title{
+    text-align: center;
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.na1{
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    margin-right: 100px;
+    text-align: center;
+  }
+.na2{
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    text-align: left;
+    margin-right: 100px;
+    text-align: center;
+  }
+  
+.na3{
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    margin-right: 100px;
+    text-align: center;
+  }
+.na4{
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin-right: 100px;
+  }
+
+.na5{
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+.aisatu{
+    text-align: center;
+    font-size: 30px;
+}
+
+.p1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    background-color: #fafafa;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    
+}
