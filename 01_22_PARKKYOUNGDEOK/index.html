@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>チーズアカデミー</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="controller"></script>
+</head>
+
+<body class="body">
+  <!-- この中に記述していく -->
+  <header class="nav" id=header>
+    <img class="logo" src="img/header_logo.png" alt="">
+    <div class="nav-right-menu">
+
+      <button class="right-menu-1" onclick="myFunction1()">
+        ABOUT
+      </button>
+      <button class="right-menu-2" onclick="myFunction2()">
+        COURSE
+      </button>
+      <button class="right-menu-3" onclick="myFunction3()">
+        NEWS
+      </button> 
+      <button class="right-menu-4" onclick="myFunction4()">
+        ACCESS
+      </button> 
+      <button class="right-menu-5" onclick="myFunction5()">
+        CONTACT
+      </button>
+
+      
+    </div>
+
+  </header>
+
+
+  <script>
+      function myFunction1() {
+        var elmnt = document.getElementById("A");
+        elmnt.scrollIntoView();
+      }
+  </script>
+
+<script>
+    function myFunction2() {
+      var elmnt = document.getElementById("B");
+      elmnt.scrollIntoView();
+    }
+</script>
+
+<script>
+    function myFunction3() {
+      var elmnt = document.getElementById("C");
+      elmnt.scrollIntoView();
+    }
+</script>
+
+<script>
+
+    function myFunction4() {
+      
+      var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    var elmnt = document.getElementById("D");
+      elmnt.scrollIntoView();
+      
+    }
+
+
+</script>
+
+<script>
+    function myFunction5() {
+      var elmnt = document.getElementById("E");
+      elmnt.scrollIntoView();
+    }
+</script>
+
+
+
+
+
+  <div class="content">
+    <h1 class="content-a">セカイを変えるチーズを作ろう</h1>
+    <h2 class="content-b">チーズ職人養成学校「チーズアカデミーTOKYO」</h2>
+  </div>
+ 
+  
+  <header class='header'>
+    <p class="title-a" id="A">ABOUT</p>
+      <p class="subtitle-a">チーズアカデミーについて</p>
+      <div class="text11">
+        <p class="text-a">チーズアカデミーは、チーズ職人養成学校です。</p>
+        <p class="text-b">チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。</p>
+        <p class="text-c">そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。</p>
+        <p class="text-d">そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。</p>
+        <p class="text-e">卒業後、チーズ自給自足のバックアップはもちろんのこと、</p>
+        <p class="text-f">チーズ職人への就職・転職もサポートします。</p>
+      </div>
+  </header>
+<!-- Slideshow container -->
+<div class="slideshow-container" id="B">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/about_04.jpg" style="">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/about_03.jpg" style="">
+    
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/about_02.jpg" style="">
+     
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/about_01.jpg" style="">
+        
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+
+  </div>
+ 
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  
+   </div>
+  
+
+
+
+
+
+
+<p class="title-b" id="C">NEWS</p>
+<p class="subtitle-b">ニュース</p>
+  
+<div class="about-image" >
+  <div class="about-image1">
+    <img src="img/about_04.jpg" alt="">
+    <p class="image-text1">2016/11/18</p>
+    <p class="image-text2">チーズアカデミー卒業生のコスゲさんによる</p>
+    <p class="image-text2">チーズだけをふんだんに使用した話題のピザ屋</p>
+    <p class="image-text2">「Kosuge Pizza」が渋谷でオープンしました！</p>
+  </div>
+  <div class="about-image2">  
+    <img src="img/about_04.jpg" alt="">
+    <p class="image-text1">2016/11/18</p>
+    <p class="image-text2">チーズアカデミー卒業生のコスゲさんによる</p>
+    <p class="image-text2">チーズだけをふんだんに使用した話題のピザ屋</p>
+    <p class="image-text2">「Kosuge Pizza」が渋谷でオープンしました！</p>
+  </div>
+  <div class="about-image3">  
+    <img src="img/about_04.jpg" alt="">
+    <p class="image-text1">2016/11/18</p>
+    <p class="image-text2">チーズアカデミー卒業生のコスゲさんによる</p>
+    <p class="image-text2">チーズだけをふんだんに使用した話題のピザ屋</p>
+    <p class="image-text2">「Kosuge Pizza」が渋谷でオープンしました！</p>
+  </div>
+
+</div>
+<div class="MORE-button">
+  <button class="button" onclick="myFunction()">MORE</button>
+
+  <div id="myDIV">
+   <div class="title-dddd">
+
+    <h4 class="title-h" id="D">ACCESS</h4>
+    <p class="subtitle-h">会社情報</p>
+
+   </div>
+
+    <div class="access11">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3947655581387!2d139.71156151509297!3d35.66728053834463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fa9e2e881%3A0x35396adb5ba7ce03!2sG&#39;s+ACADEMY+TOKYO!5e0!3m2!1sko!2sjp!4v1563960583720!5m2!1sko!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="map-textset1">
+            <div class="map-subtext1">
+              <p class="map-text1">学校名</p>
+              <p class="map-text6"> チーズアカデミーTOKYO</p>
+            </div>
+            <div class="map-subtext2">
+              <p class="map-text2">事務所所在地</p>
+              <p class="map-text7">〒107-0061東京都港区北青山3-5-6 青朋ビル2F</p>
+            </div>
+            <div class="map-subtext3">
+              <p class="map-text3">TEL</p>
+              <p class="map-text8">03-5413-5045</p>
+            </div>
+            <div class="map-subtext4">
+              <p class="map-text4">FAX</p>
+              <p class="map-text9"> 03-5413-5046</p>
+            </div>  
+            <div class="map-subtext5">
+              <p class="map-text5">MAIL</p>
+              <p class="map-text10">dummy@cheeseacademy.tokyo</p>
+            </div>
+      </div>
+    </div>
+      
+    </div>
+     
+
+  </div>
+
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+<h5 class="title-d" id="E">CONTACT</h5>
+  <div class="title-d-text">
+    <p class="title-d-text1">説明会お申し込み・お問い合わせ</p>
+    <p class="title-d-text2">ぜひ1度、足を運んでみませんか。説明会は随時開催中。</p>
+    <p class="title-d-text3">その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+    <p class="title-d-text4">※チーズアカデミーは実際には存在しません。</p>
+    <p class="title-d-text5">間違っても問い合わせしないようお願いいたします。</p>
+  </div>
+
+
+
+  <footer class="footer">
+    
+    <form action="/action_page.php">
+      <table class="table-all">
+        <tr class="table1">
+          <th class="table-txt1">名前</th>
+          <th class="table-txt2">
+            <input class="TXT1" type="text">
+          </th>
+        </tr>
+        
+        <tr>
+          <div class="table3">
+            <td class="table-txt5">志望動機</td>
+            <td class="table-txt6">
+              <div class="checkbox">  
+                  <input class="checkbox1" type="checkbox" name="select" value=""> google検索<br>
+                  <input class="checkbox2" type="checkbox" name="select" value="" > SNS<br>
+                  <input class="checkbox3" type="checkbox" name="select" value=""> 紹介<br>
+                  <input class="checkbox4" type="checkbox" name="select" value="" > たまたま通りかかった<br>
+                  <input class="checkbox5" type="checkbox" name="select" value=""> その他<br>
+              </div>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="table4">
+            <td class="table-txt7">詳細</td>
+            <td class="table-txt8">
+              <textarea class="TXT3" ></textarea>
+
+            </td>
+          </div>
+          </tr>
+
+      </table>
+    </form>   
+  </footer>
+  <form action="/action_page.php">
+      <div class="tosend">
+          <input type="submit" value="送信" class="button2" onclick=""></input>
+      </div>
+  </form> 
+<div id="last">
+  <p class="lasttext">copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
+</div>
+  <!-- この中に記述していく -->
+</body>
+
+</html>
