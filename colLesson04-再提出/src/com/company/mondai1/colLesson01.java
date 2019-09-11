@@ -20,7 +20,7 @@ public class colLesson01 {
 
                 String input = sc.nextLine();
                 if(count >= 5){
-                    throw new Exception();
+                    throw new ArrayIndexOutOfBoundsException();
                 }
                 String[] wordandmeaning = input.split(" "); // {"apple","りんご"}
 
@@ -39,7 +39,7 @@ public class colLesson01 {
                 System.out.println(inputs.get(i).toString());
             }
             System.out.println(count + "件登録しました。");
-        } catch (Exception e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("登録制限を超えました。登録済みのデータは以下になります。");
             for (int i = 0; i < count; i++) {
                 System.out.println(inputs.get(i).toString());
@@ -50,6 +50,5 @@ public class colLesson01 {
 
     }
 }
-
 
 
